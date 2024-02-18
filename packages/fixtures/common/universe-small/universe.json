@@ -1,0 +1,5 @@
+[
+    { "origin": "A", "destination": "B", "travel_time": 1 },
+    { "origin": "B", "destination": "C", "travel_time": 1 }
+  ]
+  

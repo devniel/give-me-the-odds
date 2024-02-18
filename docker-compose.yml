@@ -1,0 +1,48 @@
+version: "3"
+
+services:
+  web:
+    container_name: give-me-the-odds_web
+    build:
+      context: .
+      dockerfile: ./apps/web/Dockerfile
+      args:
+        API_URL: http://api:3001
+    restart: always
+    ports:
+      - 3000:3000
+    environment:
+      - API_URL=http://api:3001
+      - BASE_URL=http://web:3000
+    networks:
+      - network
+    volumes:
+      - fixtures:/fixtures
+
+  api:
+    container_name: give-me-the-odds_api
+    build:
+      context: .
+      dockerfile: ./apps/api/Dockerfile
+    restart: always
+    ports:
+      - 3001:3001
+    environment:
+      - MILLENNIUM_FALCON_PATH=/fixtures/common/millennium-falcon.json
+    networks:
+      - network
+    volumes:
+      - fixtures:/fixtures
+
+networks:
+  network:
+    name: give-me-the-odds_network
+    driver: bridge
+
+volumes:
+  fixtures:
+    driver: local
+    driver_opts:
+      type: none
+      device: ./packages/fixtures
+      o: bind

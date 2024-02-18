@@ -1,0 +1,80 @@
+{
+  "A": [
+    {
+      "type": "refuel",
+      "origin": "A",
+      "destination": "A_REFUEL_1_DAYS",
+      "cost": { "days": 1, "fuel": 0 }
+    },
+    {
+      "type": "move",
+      "origin": "A",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 }
+    }
+  ],
+  "B": [
+    {
+      "type": "refuel",
+      "origin": "B",
+      "destination": "B_REFUEL_1_DAYS",
+      "cost": { "days": 1, "fuel": 0 }
+    },
+    {
+      "type": "move",
+      "origin": "B",
+      "destination": "A",
+      "cost": { "days": 1, "fuel": 1 }
+    },
+    {
+      "type": "move",
+      "origin": "B",
+      "destination": "C",
+      "cost": { "days": 1, "fuel": 1 }
+    }
+  ],
+  "A_REFUEL_1_DAYS": [
+    {
+      "type": "move",
+      "origin": "A_REFUEL_1_DAYS",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 }
+    }
+  ],
+  "B_REFUEL_1_DAYS": [
+    {
+      "type": "move",
+      "origin": "B_REFUEL_1_DAYS",
+      "destination": "A",
+      "cost": { "days": 1, "fuel": 1 }
+    },
+    {
+      "type": "move",
+      "origin": "B_REFUEL_1_DAYS",
+      "destination": "C",
+      "cost": { "days": 1, "fuel": 1 }
+    }
+  ],
+  "C": [
+    {
+      "type": "refuel",
+      "origin": "C",
+      "destination": "C_REFUEL_1_DAYS",
+      "cost": { "days": 1, "fuel": 0 }
+    },
+    {
+      "type": "move",
+      "origin": "C",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 }
+    }
+  ],
+  "C_REFUEL_1_DAYS": [
+    {
+      "type": "move",
+      "origin": "C_REFUEL_1_DAYS",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  [
+    {
+      "type": "move",
+      "origin": "A",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 },
+      "status": {
+        "current": { "days": 1, "isBountyHunter": false },
+        "total": { "days": 1, "fuel": 0, "captureProbability": 0 }
+      }
+    },
+    {
+      "type": "refuel",
+      "origin": "B",
+      "destination": "B_REFUEL_1_DAYS",
+      "cost": { "days": 1, "fuel": 0 },
+      "status": {
+        "current": { "days": 2, "isBountyHunter": false },
+        "total": { "days": 2, "fuel": 1, "captureProbability": 0 }
+      }
+    },
+    {
+      "type": "move",
+      "origin": "B_REFUEL_1_DAYS",
+      "destination": "C",
+      "cost": { "days": 1, "fuel": 1 },
+      "status": {
+        "current": { "days": 3, "isBountyHunter": false },
+        "total": { "days": 3, "fuel": 0, "captureProbability": 0 }
+      }
+    }
+  ]
+]

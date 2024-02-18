@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply w-full h-full;
+}
+
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > main {
+  @apply w-full h-full;
+}
+
+body {
+  color: white;
+  @apply bg-black;
+}

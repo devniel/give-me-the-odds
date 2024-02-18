@@ -1,0 +1,10 @@
+{
+  "successProbability": 0.81,
+  "itineraries": [
+    [
+      "Travel from Tatooine to Hoth with 10% chance of being captured on day 6 on Hoth.",
+      "Refuel on Hoth with 10% chance of being captured on day 7 on Hoth.",
+      "Travel from Hoth to Endor."
+    ]
+  ]
+}

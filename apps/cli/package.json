@@ -1,0 +1,85 @@
+{
+  "name": "give-me-the-odds",
+  "version": "0.0.0",
+  "author": "Daniel Mauricio Flores @devniel",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "./build.sh",
+    "build:dev": "tsup",
+    "lint": "eslint . --ext .ts",
+    "prepack": "npm run build && oclif manifest && oclif readme",
+    "prepare": "npm run build",
+    "test": "jest",
+    "version": "oclif readme && git add README.md"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "dependencies": {
+    "@oclif/core": "^3",
+    "@oclif/plugin-help": "^6",
+    "@oclif/plugin-plugins": "^4",
+    "@repo/core": "*"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@oclif/prettier-config": "^0.2.1",
+    "@oclif/test": "^3",
+    "@repo/fixtures": "*",
+    "@types/chai": "^4",
+    "@types/jest": "^29.5.12",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^18.19.17",
+    "chai": "^4",
+    "esbuild": "^0.20.0",
+    "eslint": "^8.56.0",
+    "eslint-config-oclif": "^5",
+    "eslint-config-oclif-typescript": "^3",
+    "eslint-config-prettier": "^9.1.0",
+    "inquirer": "8.2.4",
+    "minimatch": "3.1.2",
+    "mocha": "^10",
+    "oclif": "^4",
+    "shx": "^0.3.3",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5"
+  },
+  "bin": {
+    "give-me-the-odds": "./bin/run.js"
+  },
+  "files": [
+    "/bin",
+    "/dist",
+    "/oclif.manifest.json"
+  ],
+  "oclif": {
+    "bin": "give-me-the-odds",
+    "dirname": "give-me-the-odds",
+    "commands": "./dist/commands",
+    "default": "odds",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
+    ],
+    "topics": {
+      "odds": {
+        "description": "main command"
+      }
+    },
+    "topicSeparator": " "
+  },
+  "tsup": {
+    "dts": true,
+    "bundle": true,
+    "treeshake": true,
+    "target": "node18",
+    "format": ["esm", "cjs"],
+    "entry": ["./src/**/*.ts"],
+    "noExternal": ["@repo/core"],
+    "external": ["sqlite3"]
+  }
+}

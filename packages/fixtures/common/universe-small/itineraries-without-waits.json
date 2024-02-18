@@ -1,0 +1,82 @@
+[
+  [
+    {
+      "type": "refuel",
+      "origin": "A",
+      "destination": "A_REFUEL_1_DAYS",
+      "cost": { "days": 1, "fuel": 0 }
+    },
+    {
+      "type": "move",
+      "origin": "A_REFUEL_1_DAYS",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 }
+    },
+    {
+      "type": "refuel",
+      "origin": "B",
+      "destination": "B_REFUEL_1_DAYS",
+      "cost": { "days": 1, "fuel": 0 }
+    },
+    {
+      "type": "move",
+      "origin": "B_REFUEL_1_DAYS",
+      "destination": "C",
+      "cost": { "days": 1, "fuel": 1 }
+    }
+  ],
+  [
+    {
+      "type": "refuel",
+      "origin": "A",
+      "destination": "A_REFUEL_1_DAYS",
+      "cost": { "days": 1, "fuel": 0 }
+    },
+    {
+      "type": "move",
+      "origin": "A_REFUEL_1_DAYS",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 }
+    },
+    {
+      "type": "move",
+      "origin": "B",
+      "destination": "C",
+      "cost": { "days": 1, "fuel": 1 }
+    }
+  ],
+  [
+    {
+      "type": "move",
+      "origin": "A",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 }
+    },
+    {
+      "type": "refuel",
+      "origin": "B",
+      "destination": "B_REFUEL_1_DAYS",
+      "cost": { "days": 1, "fuel": 0 }
+    },
+    {
+      "type": "move",
+      "origin": "B_REFUEL_1_DAYS",
+      "destination": "C",
+      "cost": { "days": 1, "fuel": 1 }
+    }
+  ],
+  [
+    {
+      "type": "move",
+      "origin": "A",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 }
+    },
+    {
+      "type": "move",
+      "origin": "B",
+      "destination": "C",
+      "cost": { "days": 1, "fuel": 1 }
+    }
+  ]
+]

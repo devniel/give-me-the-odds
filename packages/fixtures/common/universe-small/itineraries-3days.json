@@ -1,0 +1,152 @@
+[
+  [
+    {
+      "type": "refuel",
+      "origin": "A",
+      "destination": "A_REFUEL_1_DAYS",
+      "cost": { "days": 1, "fuel": 0 },
+      "status": {
+        "current": { "days": 1, "isBountyHunter": false },
+        "total": { "days": 1, "fuel": 0, "captureProbability": 0 }
+      }
+    },
+    {
+      "type": "move",
+      "origin": "A_REFUEL_1_DAYS",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 },
+      "status": {
+        "current": { "days": 2, "isBountyHunter": false },
+        "total": { "days": 2, "fuel": 0, "captureProbability": 0 }
+      }
+    },
+    {
+      "type": "move",
+      "origin": "B",
+      "destination": "C",
+      "cost": { "days": 1, "fuel": 1 },
+      "status": {
+        "current": { "days": 3, "isBountyHunter": false },
+        "total": { "days": 3, "fuel": 0, "captureProbability": 0 }
+      }
+    }
+  ],
+  [
+    {
+      "type": "wait",
+      "origin": "A",
+      "destination": "A_WAIT_1_DAYS",
+      "cost": { "days": 1, "fuel": 0 },
+      "status": {
+        "current": { "days": 1, "isBountyHunter": false },
+        "total": { "days": 1, "fuel": 0, "captureProbability": 0 }
+      }
+    },
+    {
+      "type": "move",
+      "origin": "A_WAIT_1_DAYS",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 },
+      "status": {
+        "current": { "days": 2, "isBountyHunter": false },
+        "total": { "days": 2, "fuel": 0, "captureProbability": 0 }
+      }
+    },
+    {
+      "type": "move",
+      "origin": "B",
+      "destination": "C",
+      "cost": { "days": 1, "fuel": 1 },
+      "status": {
+        "current": { "days": 3, "isBountyHunter": false },
+        "total": { "days": 3, "fuel": 0, "captureProbability": 0 }
+      }
+    }
+  ],
+  [
+    {
+      "type": "move",
+      "origin": "A",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 },
+      "status": {
+        "current": { "days": 1, "isBountyHunter": false },
+        "total": { "days": 1, "fuel": 0, "captureProbability": 0 }
+      }
+    },
+    {
+      "type": "refuel",
+      "origin": "B",
+      "destination": "B_REFUEL_1_DAYS",
+      "cost": { "days": 1, "fuel": 0 },
+      "status": {
+        "current": { "days": 2, "isBountyHunter": false },
+        "total": { "days": 2, "fuel": 0, "captureProbability": 0 }
+      }
+    },
+    {
+      "type": "move",
+      "origin": "B_REFUEL_1_DAYS",
+      "destination": "C",
+      "cost": { "days": 1, "fuel": 1 },
+      "status": {
+        "current": { "days": 3, "isBountyHunter": false },
+        "total": { "days": 3, "fuel": 0, "captureProbability": 0 }
+      }
+    }
+  ],
+  [
+    {
+      "type": "move",
+      "origin": "A",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 },
+      "status": {
+        "current": { "days": 1, "isBountyHunter": false },
+        "total": { "days": 1, "fuel": 0, "captureProbability": 0 }
+      }
+    },
+    {
+      "type": "wait",
+      "origin": "B",
+      "destination": "B_WAIT_1_DAYS",
+      "cost": { "days": 1, "fuel": 0 },
+      "status": {
+        "current": { "days": 2, "isBountyHunter": false },
+        "total": { "days": 2, "fuel": 0, "captureProbability": 0 }
+      }
+    },
+    {
+      "type": "move",
+      "origin": "B_WAIT_1_DAYS",
+      "destination": "C",
+      "cost": { "days": 1, "fuel": 1 },
+      "status": {
+        "current": { "days": 3, "isBountyHunter": false },
+        "total": { "days": 3, "fuel": 0, "captureProbability": 0 }
+      }
+    }
+  ],
+  [
+    {
+      "type": "move",
+      "origin": "A",
+      "destination": "B",
+      "cost": { "days": 1, "fuel": 1 },
+      "status": {
+        "current": { "days": 1, "isBountyHunter": false },
+        "total": { "days": 1, "fuel": 0, "captureProbability": 0 }
+      }
+    },
+    {
+      "type": "move",
+      "origin": "B",
+      "destination": "C",
+      "cost": { "days": 1, "fuel": 1 },
+      "status": {
+        "current": { "days": 2, "isBountyHunter": false },
+        "total": { "days": 2, "fuel": 0, "captureProbability": 0 }
+      }
+    }
+  ]
+]

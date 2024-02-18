@@ -1,0 +1,19 @@
+{
+  "successProbability": 1,
+  "itineraries": [
+    [
+      "Travel from Tatooine to Dagobah.",
+      "Refuel on Dagobah.",
+      "Wait for 1 day on Dagobah.",
+      "Travel from Dagobah to Hoth.",
+      "Travel from Hoth to Endor."
+    ],
+    [
+      "Wait for 1 day on Tatooine.",
+      "Travel from Tatooine to Dagobah.",
+      "Refuel on Dagobah.",
+      "Travel from Dagobah to Hoth.",
+      "Travel from Hoth to Endor."
+    ]
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "workspaces",
+  "private": true,
+  "scripts": {
+    "start": "turbo start",
+    "build": "turbo build && cp -r ./apps/cli/artifacts .",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "test": "turbo test",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@9.6.7",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

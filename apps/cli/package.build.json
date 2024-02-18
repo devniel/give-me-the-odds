@@ -1,0 +1,35 @@
+{
+  "name": "give-me-the-odds",
+  "version": "0.0.0",
+  "author": "Daniel Mauricio Flores @devniel",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "scripts": {},
+  "dependencies": {
+    "@oclif/core": "^3",
+    "@oclif/plugin-help": "^6",
+    "@oclif/plugin-plugins": "^4",
+    "sqlite3": "^5.1.7"
+  },
+  "bin": {
+    "give-me-the-odds": "./bin/run.js"
+  },
+  "files": ["/bin", "/dist", "/oclif.manifest.json"],
+  "oclif": {
+    "bin": "give-me-the-odds",
+    "dirname": "give-me-the-odds",
+    "commands": "./dist/commands",
+    "default": "odds",
+    "plugins": ["@oclif/plugin-help", "@oclif/plugin-plugins"],
+    "topics": {
+      "odds": {
+        "description": "main command"
+      }
+    },
+    "topicSeparator": " "
+  }
+}
