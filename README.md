@@ -2,7 +2,12 @@
 
 Returns the odds that the Millennium Falcon reaches Endor in time and saves the galaxy.
 
-## 🚀 How to run the web app ?
+## ⚡️ Demo
+https://give-me-the-odds.devniel.com
+
+*You can use the `./packages/fixtures/example-n/empire.json` files to test it.
+
+## 🚀 How to run the web app locally ?
 
 ### 🐳 With Docker
 ```bash
